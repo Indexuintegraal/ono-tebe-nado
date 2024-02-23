@@ -42,13 +42,13 @@ html {
   width: 134px;
   height: 104px;
 }
-.header-address {
+.address-block {
   display: flex;
+  font-style: normal;
   flex-direction: column;
   justify-self: end;
 }
-.header-address-phone,
-.header-address-mail {
+.address-item {
   display: block;
   width: fit-content;
   font-size: 18px;
@@ -86,7 +86,6 @@ html {
   opacity: 0.6;
 }
 .cover-title {
-  height: 355px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -229,6 +228,8 @@ span {
   grid-row-gap: 4px;
 }
 .about__logo {
+  grid-column:1/1;
+  grid-row: 1 / span 2;
   width: 240px;
   height: 240px;
   background-color: #000;
@@ -241,6 +242,12 @@ span {
   text-transform: uppercase;
   color: #000;
   align-self: center;
+  grid-column: 2;
+  grid-row: 1;
+}
+.about__column-right {
+  grid-column: 2;
+  grid-row: 2;
 }
 .about__text {
   display: flex;
